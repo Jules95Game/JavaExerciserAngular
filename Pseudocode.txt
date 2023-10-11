@@ -1,0 +1,20 @@
+Objects:
+
+class Exercise()
+{
+    prop int            Id
+    prop string         Name => <filename>.java
+    prop int            Size
+    prop List<string>   Techniques/Tags
+    prop string         Instructions/Description
+    prop Enum           Status
+    prop DateTime       StatusTime
+}
+
+Enum Status()
+{
+    prop string         Status
+    {
+        "Blank", "Pending", "Solved"
+    }
+}
