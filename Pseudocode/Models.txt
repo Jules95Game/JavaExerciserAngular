@@ -1,4 +1,4 @@
-Objects:
+Models:
 
 class Exercise()
 {
@@ -15,6 +15,6 @@ Enum Status()
 {
     prop string         Status
     {
-        "Blank", "Pending", "Solved"
+        "Default", "Pending", "Solved"
     }
 }
