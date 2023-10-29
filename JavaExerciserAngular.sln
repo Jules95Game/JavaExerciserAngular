@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavaExerciserAngular.Domain
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88292941-BE93-42CF-9018-55390148F941}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
 		Pseudocode\Models.txt = Pseudocode\Models.txt
+		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Business", "1. Business", "{7DD32ACF-4B23-4808-B911-D4312835E09A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7134601-A8E7-483E-B283-A5A2D6A640C4} = {7DD32ACF-4B23-4808-B911-D4312835E09A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB4196EE-0CFC-4C0E-B679-4F775F3B9CB8}
