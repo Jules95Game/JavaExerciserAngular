@@ -36,4 +36,4 @@ I'll add an ExerciseController that uses the Business methods to handle the exer
 In Program.cs I'll setup dependency injection with the necessary classes.
 
 Using Node.js and AngularCLI I'll create a webpage frontend.  
-(To do: Finish Angular description)
+(To do: Finish Angular description/plan)
