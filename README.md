@@ -23,10 +23,12 @@ The program should function as follows:
 
 ## Project plan
 My plan is to write an ASP.NET API for the backend and make a webpage using angular for the frontend.  
-I will decide what models to design and setup a database in a MSSQL server that will store the exercises.
-Then I will write interfaces with methods for reading and updating the database.
+I will decide what models to design and setup a database in a MSSQL server that will store the Java exercises.
+Then I will write interfaces with methods for reading and updating the database.  
 A Domain library will hold the models and interfaces.
 A Data Access library will provide the database connection.
-In a Business library I will implement the methods from the interfaces.
-Before writing the logic for those methods I will make a unit-test project to outline what each method is 
-expected to do.
+In a Business library I will implement the methods from the interfaces.  
+Before writing the logic for those methods I will make a unit-test project to outline what each method is
+expected to do. I will then add logic to the methods until all the unit-tests pass.  
+When the Business library is functional I'll create an ASP.NET Web API project.
+I'll add an ExerciseController that uses the Business methods to handle the exercise data.
