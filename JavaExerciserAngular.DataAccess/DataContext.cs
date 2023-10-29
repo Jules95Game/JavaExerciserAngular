@@ -1,6 +1,5 @@
 ﻿using JavaExerciserAngular.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 
 namespace JavaExerciserAngular.DataAccess;
 
@@ -30,7 +29,8 @@ public class DataContext : DbContext
                                + "\r\n"
                                + "** HINT: it can be fun to make your own method to convert a number or String to a binary number. But one thing to\r\n"
                                + "** learn on the road to becoming a professional is that Java has LOTS of useful methods already inbuilt. Check\r\n"
-                               + "** the wrapper class of int, Integer! :)"
+                               + "** the wrapper class of int, Integer! :)",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -44,7 +44,8 @@ public class DataContext : DbContext
                                + "Example run:\r\n"
                                + "Enter the first number: 3\r\n"
                                + "Enter the second number: 5\r\n"
-                               + "The sum is: 8"
+                               + "The sum is: 8",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -70,7 +71,8 @@ public class DataContext : DbContext
                                + "Name an animal: dog\r\n"
                                + "I don't know any animal whose name starts with 'g'. You win!\r\n"
                                + "\r\n"
-                               + "Hint: some sample animal names: cat, dog, turtle."
+                               + "Hint: some sample animal names: cat, dog, turtle.",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -83,7 +85,8 @@ public class DataContext : DbContext
                                + "\r\n"
                                + "altPairs(\"kitten\") → \"kien\"\r\n"
                                + "altPairs(\"Chocolate\") → \"Chole\"\r\n"
-                               + "altPairs(\"CodingHorror\") → \"Congrr\""
+                               + "altPairs(\"CodingHorror\") → \"Congrr\"",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -91,7 +94,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -99,7 +103,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -107,7 +112,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -115,7 +121,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -123,7 +130,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -131,7 +139,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -139,7 +148,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -147,7 +157,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -155,7 +166,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -163,7 +175,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -171,7 +184,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -179,7 +193,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -187,7 +202,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -195,7 +211,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -203,7 +220,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -211,7 +229,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -219,7 +238,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -227,7 +247,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -235,7 +256,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -243,7 +265,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -251,7 +274,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -259,7 +283,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -267,7 +292,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -275,7 +301,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -283,7 +310,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -291,7 +319,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -299,7 +328,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -307,7 +337,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -315,7 +346,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -323,7 +355,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -331,7 +364,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -339,7 +373,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -347,7 +382,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -355,7 +391,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -363,7 +400,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -371,7 +409,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -379,7 +418,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -387,7 +427,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -395,7 +436,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -403,7 +445,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -411,7 +454,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -419,7 +463,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -427,7 +472,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -435,7 +481,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -443,7 +490,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -451,7 +499,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -459,7 +508,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -467,7 +517,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -475,7 +526,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -483,7 +535,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -491,7 +544,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -499,7 +553,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -507,7 +562,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -515,7 +571,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -523,7 +580,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -531,7 +589,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -539,7 +598,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -547,7 +607,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -555,7 +616,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -563,7 +625,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -571,7 +634,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -579,7 +643,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -587,7 +652,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -595,7 +661,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -603,7 +670,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -611,7 +679,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -619,7 +688,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -627,7 +697,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -635,7 +706,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -643,7 +715,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -651,7 +724,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -659,7 +733,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -667,7 +742,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -675,7 +751,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -683,7 +760,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -691,7 +769,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -699,7 +778,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -707,7 +787,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -715,7 +796,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -723,7 +805,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -731,7 +814,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -739,7 +823,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -747,7 +832,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -755,7 +841,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -763,7 +850,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -771,7 +859,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -779,7 +868,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -787,7 +877,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -795,7 +886,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -803,7 +895,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -811,7 +904,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -819,7 +913,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -827,7 +922,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -835,7 +931,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -843,7 +940,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -851,7 +949,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -859,7 +958,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -867,7 +967,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -875,7 +976,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -883,7 +985,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -891,7 +994,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -899,7 +1003,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -907,7 +1012,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -915,7 +1021,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -923,7 +1030,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -931,7 +1039,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -939,7 +1048,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -947,7 +1057,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -955,7 +1066,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -963,7 +1075,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -971,7 +1084,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -979,7 +1093,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -987,7 +1102,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -995,7 +1111,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1003,7 +1120,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1011,7 +1129,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1019,7 +1138,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1027,7 +1147,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1035,7 +1156,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1043,7 +1165,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1051,7 +1174,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1059,7 +1183,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1067,7 +1192,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1075,7 +1201,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1083,7 +1210,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1091,7 +1219,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1099,7 +1228,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1107,7 +1237,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1115,7 +1246,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1123,7 +1255,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1131,7 +1264,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1139,7 +1273,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1147,7 +1282,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1155,7 +1291,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1163,7 +1300,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1171,7 +1309,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1179,7 +1318,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1187,7 +1327,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1195,7 +1336,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1203,7 +1345,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1211,7 +1354,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1219,7 +1363,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1227,7 +1372,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1235,7 +1381,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1243,7 +1390,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1251,7 +1399,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1259,7 +1408,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1267,7 +1417,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             },
             new Exercise
             {
@@ -1275,7 +1426,8 @@ public class DataContext : DbContext
                 Name = "Test",
                 Size = 100,
                 Techniques = new() { "wow" },
-                Instructions = ""
+                Instructions = "",
+                Status = Status.Default
             });
     }
 }
