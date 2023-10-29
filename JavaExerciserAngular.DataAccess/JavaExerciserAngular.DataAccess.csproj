@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JavaExerciserAngular.Domain\JavaExerciserAngular.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
