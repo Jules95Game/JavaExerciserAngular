@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Business", "1. Business", "{7DD32ACF-4B23-4808-B911-D4312835E09A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaExerciserAngular.DataAccess", "JavaExerciserAngular.DataAccess\JavaExerciserAngular.DataAccess.csproj", "{725FC809-7921-4107-B094-83C21745AD61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{F7134601-A8E7-483E-B283-A5A2D6A640C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7134601-A8E7-483E-B283-A5A2D6A640C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7134601-A8E7-483E-B283-A5A2D6A640C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725FC809-7921-4107-B094-83C21745AD61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725FC809-7921-4107-B094-83C21745AD61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725FC809-7921-4107-B094-83C21745AD61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725FC809-7921-4107-B094-83C21745AD61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F7134601-A8E7-483E-B283-A5A2D6A640C4} = {7DD32ACF-4B23-4808-B911-D4312835E09A}
+		{725FC809-7921-4107-B094-83C21745AD61} = {7DD32ACF-4B23-4808-B911-D4312835E09A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB4196EE-0CFC-4C0E-B679-4F775F3B9CB8}
