@@ -91,55 +91,114 @@ public class DataContext : DbContext
             new Exercise
             {
                 Id = 5,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "AreaAndPerimeterOfCircle.java",
+                Size = 9,
+                Techniques = new() { "double", "Math.PI", "operators - arithmetic" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to print the area and perimeter of a circle.\r\n"
+                               + "Test Data:\r\n"
+                               + "Radius = 7.5\r\n"
+                               + "Expected Output\r\n"
+                               + "Perimeter is = 47.12388980384689\r\n"
+                               + "Area is = 176.71458676442586",
                 Status = Status.Default
             },
             new Exercise
             {
                 Id = 6,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "AreaAndPerimeterOfRectangle.java",
+                Size = 10,
+                Techniques = new() { "double", "operators - arithmetic", "System.out.printf()" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to print the area and perimeter of a rectangle.\r\n"
+                               + "Test Data:\r\n"
+                               + "Width = 5.6 Height = 8.5\r\n"
+                               + "\r\n"
+                               + "Expected Output\r\n"
+                               + "Area is 5.6 * 8.5 = 47.60\r\n"
+                               + "Perimeter is 2 * (5.6 + 8.5) = 28.20",
                 Status = Status.Default
             },
             new Exercise
             {
                 Id = 7,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "AreaOfHexagon.java",
+                Size = 11,
+                Techniques = new() { "Math.PI", "Math.tan()", "methods", "operators - arithmetic", "parameters", "return ", "Scanner", "Scanner.nextDouble" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to compute the area of a hexagon.\r\n"
+                               + "Area of a hexagon = (6 * s^2)/(4*tan(π/6))\r\n"
+                               + "where s is the length of a side\r\n"
+                               + "Input Data:\r\n"
+                               + "Input the length of a side of the hexagon: 6.0\r\n"
+                               + "Expected Output\r\n"
+                               + "\r\n"
+                               + "The area of the hexagon is: 93.53074360871938",
                 Status = Status.Default
             },
             new Exercise
             {
                 Id = 8,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "AreaOfPolygon.java",
+                Size = 14,
+                Techniques = new() { "Math.PI", "Math.tan()", "methods", "operators - arithmetic", "parameters", "return ", "Scanner", "Scanner.nextDouble()", "Scanner.nextInt()" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to compute the area of a polygon.\r\n"
+                               + "Area of a polygon = (n*s^2)/(4*tan(π/n))\r\n"
+                               + "where n is n-sided polygon and s is the length of a side\r\n"
+                               + "Input Data:\r\n"
+                               + "Input the number of sides on the polygon: 7\r\n"
+                               + "Input the length of one of the sides: 6\r\n"
+                               + "Expected Output\r\n"
+                               + "\r\n"
+                               + "The area is: 130.82084798405722",
                 Status = Status.Default
             },
             new Exercise
             {
                 Id = 9,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "AreaOfTriangleBasedOnSides.java",
+                Size = 17,
+                Techniques = new() { "Math.sqrt()", "operators - logical", "operators - arithmetic", "Scanner", "Scanner.nextInt()", "System.out.print()" },
+                Instructions = "Calculate the area of a triangle based on the length of its sides (you can find the formula after some googling).\r\n"
+                               + "If the triangle cannot exist (one side is longer that the other two combined) report so.\r\n"
+                               + "\r\n"
+                               + "Input 1:\r\n"
+                               + "Enter the length of the first side: 2\r\n"
+                               + "Enter the length of the second side: 3\r\n"
+                               + "Enter the length of the third side: 4\r\n"
+                               + "Output 1:\r\n"
+                               + "The area of the triangle is: 2.9047375096555625\r\n"
+                               + "\r\n"
+                               + "Input 2:\r\n"
+                               + "Enter the length of the first side: 2\r\n"
+                               + "Enter the length of the second side: 3\r\n"
+                               + "Enter the length of the third side: 6\r\n"
+                               + "\r\n"
+                               + "Output 2:\r\n"
+                               + "Such a triangle does not exist!\r\n"
+                               + "\r\n"
+                               + "HINT: if you can't easily find the formula, try https://www.cuemath.com/measurement/area-of-triangle-with-3-sides/",
                 Status = Status.Default
             },
             new Exercise
             {
                 Id = 10,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "ArithmeticOperations.java",
+                Size = 8,
+                Techniques = new() { "operators-arithmetic" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to print the result of the following operations.\r\n"
+                               + "Test Data:\r\n"
+                               + "a. -5 + 8 * 6\r\n"
+                               + "b. (55+9) % 9\r\n"
+                               + "c. 20 + -3*5 / 8\r\n"
+                               + "d. 5 + 15 / 3 * 2 - 8 % 3\r\n"
+                               + "Expected Output :\r\n"
+                               + "43\r\n"
+                               + "1\r\n"
+                               + "19\r\n"
+                               + "13",
                 Status = Status.Default
             },
             new Exercise
