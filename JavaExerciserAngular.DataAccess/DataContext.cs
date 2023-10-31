@@ -31,7 +31,24 @@ public class DataContext : DbContext
                                + "** learn on the road to becoming a professional is that Java has LOTS of useful methods already inbuilt. Check\r\n"
                                + "** the wrapper class of int, Integer! :)",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class AddTwoBinaryNumbers {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Input first binary number: \");\r\n"
+                           + "        String firstNumberAsString = in.next();\r\n"
+                           + "        System.out.print(\"Input second binary number: \");\r\n"
+                           + "        String secondNumberAsString = in.next();\r\n"
+                           + "\r\n"
+                           + "        int firstNumber = Integer.parseInt(firstNumberAsString, 2);\r\n"
+                           + "        int secondNumber = Integer.parseInt(secondNumberAsString, 2);\r\n"
+                           + "\r\n"
+                           + "        int sum = firstNumber + secondNumber;\r\n"
+                           + "        System.out.println(\"Sum of two binary numbers: \" + Integer.toBinaryString(sum));\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
@@ -47,7 +64,19 @@ public class DataContext : DbContext
                                + "Enter the second number: 5\r\n"
                                + "The sum is: 8",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class AddTwoNumbers {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "        System.out.print(\"Enter the first number: \");\r\n"
+                           + "        int firstNumber = in.nextInt();\r\n"
+                           + "        System.out.print(\"Enter the second number: \");\r\n"
+                           + "        int secondNumber = in.nextInt();\r\n"
+                           + "        int sum = firstNumber + secondNumber;\r\n"
+                           + "        System.out.println(\"The sum is: \" + sum);\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
@@ -75,7 +104,25 @@ public class DataContext : DbContext
                                + "\r\n"
                                + "Hint: some sample animal names: cat, dog, turtle.",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.List;\r\n"
+                           + "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class AlphabetAnimalGame {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        List<String> animals = List.of(\"cat\", \"dog\", \"turtle\");\r\n"
+                           + "        System.out.print(\"Name an animal: \");\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "        String playerAnimal = in.next();\r\n"
+                           + "        char lastLetter = playerAnimal.charAt(playerAnimal.length() - 1);\r\n"
+                           + "        for (String animal : animals) {\r\n"
+                           + "            if (animal.charAt(0) == lastLetter) {\r\n"
+                           + "                System.out.println(animal + \"!\");\r\n"
+                           + "                System.exit(0);\r\n"
+                           + "            }\r\n"
+                           + "        }\r\n"
+                           + "        System.out.printf(\"I don't know any animal whose name starts with '%c'. You win!\\n\", lastLetter);\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
@@ -90,7 +137,29 @@ public class DataContext : DbContext
                                + "altPairs(\"Chocolate\") → \"Chole\"\r\n"
                                + "altPairs(\"CodingHorror\") → \"Congrr\"",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class AltPairs {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        System.out.println(altPairs(\"kitten\"));\r\n"
+                           + "        System.out.println(altPairs(\"Chocolate\"));\r\n"
+                           + "        System.out.println(altPairs(\"CodingHorror\"));\r\n"
+                           + "    }\r\n"
+                           + "\r\n"
+                           + "    private static String altPairs(String text) {\r\n"
+                           + "        String result = \"\";\r\n"
+                           + "\r\n"
+                           + "        // Run i by 4 to hit 0, 4, 8, ...\r\n"
+                           + "        for (int i = 0; i < text.length(); i += 4) {\r\n"
+                           + "            // Append the chars between i and i+2\r\n"
+                           + "            int end = i + 2;\r\n"
+                           + "            if (end > text.length()) {\r\n"
+                           + "                end = text.length();\r\n"
+                           + "            }\r\n"
+                           + "            result = result + text.substring(i, end);\r\n"
+                           + "        }\r\n"
+                           + "\r\n"
+                           + "        return result;\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
@@ -106,7 +175,16 @@ public class DataContext : DbContext
                                + "Perimeter is = 47.12388980384689\r\n"
                                + "Area is = 176.71458676442586",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class AreaAndPerimeterOfCircle {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        double radius = 7.5;\r\n"
+                           + "        double perimeter = 2 * Math.PI * radius;\r\n"
+                           + "        double area = Math.PI * radius * radius;\r\n"
+                           + "\r\n"
+                           + "        System.out.println(\"Perimeter is = \" + perimeter);\r\n"
+                           + "        System.out.println(\"Area is = \" + area);\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
@@ -123,7 +201,17 @@ public class DataContext : DbContext
                                + "Area is 5.6 * 8.5 = 47.60\r\n"
                                + "Perimeter is 2 * (5.6 + 8.5) = 28.20",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class AreaAndPerimeterOfRectangle {\r\n" +
+                "    public static void main(String[] strings) {\r\n" +
+                "        final double width = 5.6;\r\n" +
+                "        final double height = 8.5;\r\n" +
+                "\r\n" +
+                "        double area = width * height;\r\n" +
+                "        System.out.printf(\"Area is %.1f * %.1f = %.2f\\n\", width, height, area);\r\n" +
+                "        double perimeter = 2 * (height + width);\r\n" +
+                "        System.out.printf(\"Perimeter is 2 * (%.1f + %.1f) = %.2f\\n\", height, width, perimeter);\r\n" +
+                "    }\r\n" +
+                "}"
             },
             new Exercise
             {
@@ -141,7 +229,20 @@ public class DataContext : DbContext
                                + "\r\n"
                                + "The area of the hexagon is: 93.53074360871938",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class AreaOfHexagon {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner input = new Scanner(System.in);\r\n"
+                           + "        System.out.print(\"Input the length of a side of the hexagon: \");\r\n"
+                           + "        double side = input.nextDouble();\r\n"
+                           + "        System.out.println(\"The area of the hexagon is: \" + hexagonArea(side));\r\n"
+                           + "    }\r\n"
+                           + "\r\n"
+                           + "    public static double hexagonArea(double side) {\r\n"
+                           + "        return 3 * Math.sqrt(3) * side * side / 2;\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
@@ -160,7 +261,22 @@ public class DataContext : DbContext
                                + "\r\n"
                                + "The area is: 130.82084798405722",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class AreaOfPolygon {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner input = new Scanner(System.in);\r\n"
+                           + "        System.out.print(\"Input the number of sides on the polygon: \");\r\n"
+                           + "        int numberOfSides = input.nextInt();\r\n"
+                           + "        System.out.print(\"Input the length of one of the sides: \");\r\n"
+                           + "        double side = input.nextDouble();\r\n"
+                           + "        System.out.println(\"The area is: \" + polygonArea(numberOfSides, side));\r\n"
+                           + "    }\r\n"
+                           + "\r\n"
+                           + "    public static double polygonArea(int ns, double side) {\r\n"
+                           + "        return (ns * (side * side)) / (4.0 * Math.tan((Math.PI / ns)));\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
@@ -188,7 +304,28 @@ public class DataContext : DbContext
                                + "\r\n"
                                + "HINT: if you can't easily find the formula, try https://www.cuemath.com/measurement/area-of-triangle-with-3-sides/",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class AreaOfTriangleBasedOnSides {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Enter the length of the first side: \");\r\n"
+                           + "        int a = in.nextInt();\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Enter the length of the second side: \");\r\n"
+                           + "        int b = in.nextInt();\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Enter the length of the third side: \");\r\n"
+                           + "        int c = in.nextInt();\r\n"
+                           + "\r\n"
+                           + "        if (a + b > c && a + c > b && b + c > a) {\r\n"
+                           + "            double s = (a + b + c) / 2.0;\r\n"
+                           + "            double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));\r\n"
+                           + "            System.out.println(\"The area of the triangle is: \" + area);\r\n"
+                           + "        } else System.out.println(\"Such a triangle does not exist!\");\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
@@ -209,17 +346,61 @@ public class DataContext : DbContext
                                + "19\r\n"
                                + "13",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class ArithmeticOperations {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        System.out.println(-5 + 8 * 6);\r\n"
+                           + "        System.out.println((55 + 9) % 9);\r\n"
+                           + "        System.out.println(20 + -3 * 5 / 8);\r\n"
+                           + "        System.out.println(5 + 15 / 3 * 2 - 8 % 3);\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 11,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "ArmstrongNumbers.java",
+                Size = 18,
+                Techniques = new() { "casting", "if", "Math.pow()", "operators - arithmetic", "Scanner", "Scanner.nextInt()", "String.length()", "System.out.print()", "while-loops" },
+                Instructions = "https://www.codezclub.com/java-program-check-number-armstrong-or-not/\r\n"
+                               + "An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits\r\n"
+                               + "is equal to the number itself.\r\n"
+                               + "\r\n"
+                               + "For example:\r\n"
+                               + "Three Digits Armstrong number is 153, 1 ^ 3 + 5 ^ 3 + 3 ^ 3 = 153\r\n"
+                               + "\r\n"
+                               + "Four Digits Armstrong number is 1634, 1 ^ 4 + 6 ^ 4 + 3 ^ 4 + 4 ^ 4 + = 1634\r\n"
+                               + "\r\n"
+                               + "and So on...\r\n"
+                               + "\r\n"
+                               + "Example run 1:\r\n"
+                               + "Enter the number which you want to check: 1634\r\n"
+                               + "This number is an Armstrong number.\r\n"
+                               + "\r\n"
+                               + "Example run 2:\r\n"
+                               + "Enter the number which you want to check: 1635\r\n"
+                               + "This number is not an Armstrong number.",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class ArmstrongNumbers {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        System.out.print(\"Enter the number which you want to check: \");\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "        int originalNumber = in.nextInt();\r\n"
+                           + "\r\n"
+                           + "        int numberLength = (\"\" + originalNumber).length();\r\n"
+                           + "        int armstrongNumber = 0;\r\n"
+                           + "        int number = originalNumber;\r\n"
+                           + "        while (number > 0) {\r\n"
+                           + "            int currentDigit = number % 10;\r\n"
+                           + "            number /= 10;\r\n"
+                           + "            armstrongNumber += (int) Math.pow(currentDigit, numberLength);\r\n"
+                           + "        }\r\n"
+                           + "\r\n"
+                           + "        if (armstrongNumber == originalNumber) System.out.println(\"This number is an Armstrong number.\");\r\n"
+                           + "        else System.out.println(\"This number is not an Armstrong number.\");\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
