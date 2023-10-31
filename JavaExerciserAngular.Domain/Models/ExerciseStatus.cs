@@ -1,6 +1,6 @@
 ﻿namespace JavaExerciserAngular.Domain.Models;
 
-public enum Status
+public enum ExerciseStatus
 {
     Default,
     Pending,

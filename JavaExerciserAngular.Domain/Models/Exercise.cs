@@ -10,6 +10,6 @@ public class Exercise : IEntity
     public required List<string> Techniques { get; set; }
     public required string Instructions { get; set; }
     public required string Solution { get; set; }
-    public Status Status { get; set; }
+    public ExerciseStatus Status { get; set; }
     public DateTime StatusTime { get; set; }
 }
