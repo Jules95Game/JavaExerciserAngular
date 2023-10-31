@@ -405,1422 +405,382 @@ public class DataContext : DbContext
             new Exercise
             {
                 Id = 12,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "Array123.java",
+                Size = 13,
+                Techniques = new() { "Array.index", "Array.length", "arrays", "boolean", "for-loops", "methods", "operators - logical", "operators - relational", "parameters", "return ", "varargs" },
+                Instructions = "https://codingbat.com/prob/p136041\r\n"
+                               + "Given an array of ints, return true if the sequence of numbers 1, 2, 3 appears in the array somewhere.\r\n"
+                               + "You can use an array123(int... numbers) varargs method to automatically convert a sequence of ints to an array\r\n"
+                               + "\r\n"
+                               + "array123(1, 1, 2, 3, 1) → true\r\n"
+                               + "array123(1, 1, 2, 4, 1) → false\r\n"
+                               + "array123(1, 1, 2, 1, 2, 3) → true",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class Array123 {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        System.out.println(array123(1, 1, 2, 3, 1));\r\n"
+                           + "        System.out.println(array123(1, 1, 2, 4, 1));\r\n"
+                           + "        System.out.println(array123(1, 1, 2, 1, 2, 3));\r\n"
+                           + "    }\r\n"
+                           + "\r\n"
+                           + "    private static boolean array123(int... numbers) {\r\n"
+                           + "        // Note: iterate < length-2, so can use i+1 and i+2 in the loop\r\n"
+                           + "        for (int i = 0; i < numbers.length - 2; i++) {\r\n"
+                           + "            if (numbers[i] == 1 && numbers[i + 1] == 2 && numbers[i + 2] == 3) return true;\r\n"
+                           + "        }\r\n"
+                           + "        return false;\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 13,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "Array667.java",
+                Size = 18,
+                Techniques = new() { "Array.index", "Array.length", "arrays", "for-loops", "if", "methods", "operators - logical", "operators - relational", "parameters", "return " },
+                Instructions = "https://codingbat.com/prob/p110019\r\n"
+                               + "Given an array of ints, return the number of times that two 6's are next to each other in the array. Also count instances where the second \"6\" is actually a 7.\r\n"
+                               + "\r\n"
+                               + "array667(new int[]{6, 6, 2}) → 1\r\n"
+                               + "array667(new int[]{6, 6, 2, 6}) → 1\r\n"
+                               + "array667(new int[]{6, 7, 2, 6}) → 1",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class Array667 {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        System.out.println(array667(new int[]{6, 6, 2}));\r\n"
+                           + "        System.out.println(array667(new int[]{6, 6, 2, 6}));\r\n"
+                           + "        System.out.println(array667(new int[]{6, 7, 2, 6}));\r\n"
+                           + "    }\r\n"
+                           + "\r\n"
+                           + "    private static int array667(int[] numbers) {\r\n"
+                           + "        int count = 0;\r\n"
+                           + "        // Note: iterate to length-1, so can use i+1 in the loop\r\n"
+                           + "        for (int i = 0; i < numbers.length - 1; i++) {\r\n"
+                           + "            if (numbers[i] == 6) {\r\n"
+                           + "                if (numbers[i + 1] == 6 || numbers[i + 1] == 7) {\r\n"
+                           + "                    count++;\r\n"
+                           + "                }\r\n"
+                           + "            }\r\n"
+                           + "        }\r\n"
+                           + "        return count;\r\n"
+                           + "    }\r\n"
+                           + ""
+                           + "}"
             },
             new Exercise
             {
                 Id = 14,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "ArrayCount9.java",
+                Size = 19,
+                Techniques = new() { "Array.length", "Array.index", "arrays", "foreach-loops", "methods", "parameters", "return " },
+                Instructions = "https://codingbat.com/prob/p184031\r\n"
+                               + "Given an array of ints, return the number of 9's in the array.\r\n"
+                               + "\r\n"
+                               + "int[] firstArray = new int[]{1, 2, 9};\r\n"
+                               + "arrayCount9(firstArray) → 1\r\n"
+                               + "int[] secondArray = new int[]{1, 9, 9};\r\n"
+                               + "arrayCount9(secondArray) → 2\r\n"
+                               + "int[] thirdArray = new int[]{1, 9, 9, 3, 9};\r\n"
+                               + "arrayCount9(thirdArray) → 3",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class ArrayCount9 {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        int[] firstArray = new int[]{1, 2, 9};\r\n"
+                           + "        System.out.println(arrayCount9(firstArray));\r\n"
+                           + "        int[] secondArray = new int[]{1, 9, 9};\r\n"
+                           + "        System.out.println(arrayCount9(secondArray));\r\n"
+                           + "        int[] thirdArray = new int[]{1, 9, 9, 3, 9};\r\n"
+                           + "        System.out.println(arrayCount9(thirdArray));\r\n"
+                           + "    }\r\n"
+                           + "\r\n"
+                           + "    private static int arrayCount9(int[] numbers) {\r\n"
+                           + "        int count = 0;\r\n"
+                           + "        for (int number : numbers) {\r\n"
+                           + "            if (number == 9) {\r\n"
+                           + "                count++;\r\n"
+                           + "            }\r\n"
+                           + "        }\r\n"
+                           + "        return count;\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 15,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "ArrayFront9.java",
+                Size = 15,
+                Techniques = new() { "Array.index", "Array.length", "arrays", "boolean", "for-loops", "if", "methods", "operators - relational", "parameters", "return " },
+                Instructions = "https://codingbat.com/prob/p186031\r\n"
+                               + "Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.\r\n"
+                               + "\r\n"
+                               + "arrayFront9(new int[]{1, 2, 9, 3, 4}) → true\r\n"
+                               + "arrayFront9(new int[]{1, 2, 3, 4, 9}) → false\r\n"
+                               + "arrayFront9(new int[]{1, 2, 3, 4, 5}) → false",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class ArrayFront9 {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        System.out.println(arrayFront9(new int[]{1, 2, 9, 3, 4}));\r\n"
+                           + "        System.out.println(arrayFront9(new int[]{1, 2, 3, 4, 9}));\r\n"
+                           + "        System.out.println(arrayFront9(new int[]{1, 2, 3, 4, 5}));\r\n"
+                           + "    }\r\n"
+                           + "\r\n"
+                           + "    private static boolean arrayFront9(int[] numbers) {\r\n"
+                           + "        // First figure the end for the loop\r\n"
+                           + "        int end = numbers.length;\r\n"
+                           + "        if (end > 4) end = 4;\r\n"
+                           + "\r\n"
+                           + "        for (int i = 0; i < end; i++) {\r\n"
+                           + "            if (numbers[i] == 9) return true;\r\n"
+                           + "        }\r\n"
+                           + "\r\n"
+                           + "        return false;\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 16,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "AverageOfThreeNumbers.java",
+                Size = 13,
+                Techniques = new() { "operators - arithmetic", "Scanner", "Scanner.nextInt()" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program that takes three numbers as input to calculate and print the average of the numbers",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class AverageOfThreeNumbers {\r\n"
+                           + "\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Input first number: \");\r\n"
+                           + "        int firstNumber = in.nextInt();\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Input second number: \");\r\n"
+                           + "        int secondNumber = in.nextInt();\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Input third number: \");\r\n"
+                           + "        int thirdNumber = in.nextInt();\r\n"
+                           + "\r\n"
+                           + "        System.out.println(\"The average of the three numbers is: \" + (firstNumber + secondNumber + thirdNumber) / 3);\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 17,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "BackAround.java",
+                Size = 11,
+                Techniques = new() { "methods", "parameters", "return ", "String", "String.length()", "String.substring", "String - concatenation" },
+                Instructions = "https://codingbat.com/prob/p161642\r\n"
+                               + "Given a string, take the last char and return a new string with the last char added at the front and back, so \"cat\" yields \"tcatt\". The original string will be length 1 or more.\r\n"
+                               + "\r\n"
+                               + "backAround(\"cat\") → \"tcatt\"\r\n"
+                               + "backAround(\"Hello\") → \"oHelloo\"\r\n"
+                               + "backAround(\"a\") → \"aaa\"",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class BackAround {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        System.out.println(backAround(\"cat\"));\r\n"
+                           + "        System.out.println(backAround(\"Hello\"));\r\n"
+                           + "        System.out.println(backAround(\"a\"));\r\n"
+                           + "    }\r\n"
+                           + "\r\n"
+                           + "    private static String backAround(String text) {\r\n"
+                           + "        String last = text.substring(text.length() - 1);\r\n"
+                           + "        return last + text + last;\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 18,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "BigJava.java",
+                Size = 9,
+                Techniques = new() { "text_blocks" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to display the following pattern. Go to the editor\r\n"
+                               + "Sample Pattern :\r\n"
+                               + "\r\n"
+                               + "   J    a   v     v  a\r\n"
+                               + "   J   a a   v   v  a a\r\n"
+                               + "J  J  aaaaa   V V  aaaaa\r\n"
+                               + " JJ  a     a   V  a     a",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class BigJava {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        System.out.println(\"\"\"\r\n"
+                           + "                   J    a   v     v  a \r\n"
+                           + "                   J   a a   v   v  a a\r\n"
+                           + "                J  J  aaaaa   V V  aaaaa\r\n"
+                           + "                 JJ  a     a   V  a     a\"\"\");\r\n"
+                           + "        // note: this is called the \"text blocks feature\" in Java\r\n"
+                           + "        // see also https://www.baeldung.com/java-multiline-string\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 19,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "BinaryFractions.java",
+                Size = 18,
+                Techniques = new() { "casting", "double", "final", "for-loops", "int", "operators - arithmetic", "StringBuilder", "StringBuilder.append()" },
+                Instructions = "You may understand binary numbers by now: just like a decimal (base-10) number works like\r\n"
+                               + "356 = 3 * 10 ^ 2 + 5 * 10 ^ 1 + 6 * 10 ^ 0 = 3 * 100 + 5 * 10 + 6 = 356\r\n"
+                               + "a binary number like 11001 works like\r\n"
+                               + "1 * 2 ^ 4 + 1 * 2 ^ 3 + 0 * 2 ^ 2 + 0 * 2 ^ 1 + 1 * 2 ^ 0 = 1 * 16 + 1 * 8 + 0 * 4 + 0 * 2 + 1 = 16 + 8 + 0 + 0 + 1 = 25\r\n"
+                               + "\r\n"
+                               + "But few people have thought about not-whole numbers. It is quite a logical extension, though...\r\n"
+                               + "\r\n"
+                               + "decimal: 12.35 = 1 * 10 ^ 1 + 2 * 10 ^ 0 + 3 * 10 ^ -1 + 5 * 10 ^ -2 = 1 * 10 + 2 * 1 + 3 * 0.1 + 5 * 0.01 =\r\n"
+                               + "  10 + 2 + 0.3 + 0.05 = 12.35\r\nbinary: 10.1011 = 1 * 2 ^ 1 + 0 * 2 ^ 0 + 1 * 2 ^ -1 + 0 * 2 ^ -2 + 1 * 2 ^ 3 + 1 * 2 ^ 4\r\n"
+                               + "  = 1 * 2 + 0 * 1 + 1 * 0.5 + 0 * 0.25 + 1 * 0.125 + 1 * 0.0625 = 2 + 0 + 0.5 + 0 + 0.125 + 0.0625 = 2.6875\r\n"
+                               + "\r\n"
+                               + "Converting a normal number to a binary is not that hard:\r\n"
+                               + "    25 % 2 = 1, 25 / 2 = 12, so currentAnswer = \"1\" (last digit), now calculate 12 binary\r\n"
+                               + "    12 % 2 = 0, 12 / 2 = 6, so currentAnswer = \"01\" (last digits), now calculate 6 binary\r\n"
+                               + "    6 % 2 = 0, 6 / 2 = 3, so currentAnswer = \"001\" (last digits), now calculate 3 binary\r\n"
+                               + "    3 % 2 = 1, 3 / 2 = 1, so currentAnswer = \"1001\" (last digits), now calculate 1 binary\r\n"
+                               + "    1 % 2 = 1, 1 / 2 = 0, so currentAnswer = \"11001\" (last digits), and since 0 is left, we're done!\r\n"
+                               + "\r\n"
+                               + "What about a fraction? We can do the inverse (starting with \"0.\")\r\n"
+                               + "    0.6875 * 2 = 1.375, 1.375 rounded down is 1, 1.375 - 1 = 0.375, so currentAnswer is \"0.1\", now calculate 0.375 binary\r\n"
+                               + "    0.375 * 2 = 0.75, 0.75 rounded down is 0, 0.75 - 0 = 0.75, so currentAnswer is \"0.10\", now calculate 0.75 binary\r\n"
+                               + "    0.75 * 2 = 1.5, 1.5 rounded down is 1, 1.5 - 1 = 0.5, so currentAnswer is \"0.101\", now calculate 0.5 binary\r\n"
+                               + "    0.5 * 2 = 1, 1 rounded down is 1, 1 - 1 = 0, so currentAnswer is \"0.1011\", and since 0 is left, we're done!\r\n"
+                               + "\r\n"
+                               + "Of course, as in decimal notation, 1/3 never ends, binary notation can also produce \"unending\" fractions.\r\n"
+                               + "\r\n"
+                               + "Create a program that loops from 0.01 to 0.99 and calculates the binary representation of each number. Note that you\r\n"
+                               + "may need to cut off the process at say 20 decimal digits, otherwise you can loop forever (or until the imprecision in a\r\n"
+                               + "double)\r\n"
+                               + "\r\n"
+                               + "Note: you may need to tweak this a bit, as double precision addition does not work \"properly\" (0.01 + 0.01 is not\r\n"
+                               + "necessarily equal to 0.02... Actually, since doubles are numbers represented by the computer in binary, this exercise\r\n"
+                               + "actually explains why this is so!)\r\n"
+                               + "\r\n"
+                               + "Sample output:\r\n0.01 in binary is 0.00000010100011110101\r\n"
+                               + "0.02 in binary is 0.00000101000111101011\r\n"
+                               + "0.03 in binary is 0.00000111101011100001\r\n"
+                               + "...\r\n"
+                               + "0.97 in binary is 0.11111000010100011110\r\n"
+                               + "0.98 in binary is 0.11111010111000010100\r\n"
+                               + "0.99 in binary is 0.11111101011100001010\r\n"
+                               + "\r\n"
+                               + "Question: which binary fractions are short (way shorter than 20 digits)? Can you understand why?",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "public class BinaryFractions {\r\n"
+                           + "    final static int MAX_PRECISION = 20;\r\n"
+                           + "\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        for (int percentage = 1; percentage < 100; percentage++) {\r\n"
+                           + "            StringBuilder numberAsString = new StringBuilder(\"0.\");\r\n"
+                           + "            double number = percentage / 100.0;\r\n"
+                           + "            double numberRemaining = number;\r\n"
+                           + "            for (int precision = 1; precision <= MAX_PRECISION; precision++) {\r\n"
+                           + "                if (numberRemaining == 0) break;\r\n"
+                           + "                numberRemaining *= 2;\r\n"
+                           + "                int digit = (int) numberRemaining;\r\n"
+                           + "                numberAsString.append(digit);\r\n"
+                           + "                numberRemaining -= digit;\r\n"
+                           + "            }\r\n"
+                           + "            System.out.println(number + \" in binary is \" + numberAsString);\r\n"
+                           + "        }\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 20,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "BinaryToDecimal.java",
+                Size = 10,
+                Techniques = new() { "int", "Integer", "Integer.parseInt()", "Scanner", "Scanner.next()", "String" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to convert a binary number to decimal number.\r\n"
+                               + "Input Data:\r\n"
+                               + "Input a binary number: 100\r\n"
+                               + "Expected Output\r\n"
+                               + "\r\n"
+                               + "Decimal Number: 4\r\n"
+                               + "** HINT: Check the Java standard library. You're working with whole numbers here, so Integer (the wrapper class of int,\r\n"
+                               + "   as int is a primitive and therefore cannot have any methods) may be of use :)",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class BinaryToDecimal {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Input a binary number: \");\r\n"
+                           + "        String binaryNumberAsString = in.next();\r\n"
+                           + "\r\n"
+                           + "        int number = Integer.parseInt(binaryNumberAsString, 2);\r\n"
+                           + "\r\n"
+                           + "        System.out.println(\"Decimal number: \" + number);\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 21,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
+                Name = "BinaryToHexadecimal.java",
+                Size = 9,
+                Techniques = new() { "int", "Integer", "Integer.parseInt()", "Integer.toHexString()", "Scanner", "Scanner.next()", "String", "String.toUpperCase()" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to convert a binary number to hexadecimal number.\r\n"
+                               + "Input Data:\r\n"
+                               + "Input a Binary Number: 1101\r\n"
+                               + "Expected Output\r\n"
+                               + "\r\n"
+                               + "Hexadecimal value: D\r\n"
+                               + "** HINT: Check the Java standard library. You're working with whole numbers here, so Integer (the wrapper class of int,\r\n"
+                               + "   as int is a primitive and therefore cannot have any methods) may be of use :)",
                 Status = ExerciseStatus.Default,
-                Solution = ""
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class BinaryToHexadecimal {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Input a binary number: \");\r\n"
+                           + "        String binaryNumberAsString = in.next();\r\n"
+                           + "\r\n"
+                           + "        int number = Integer.parseInt(binaryNumberAsString, 2);\r\n"
+                           + "\r\n"
+                           + "        System.out.println(\"Hexadecimal value: \" + Integer.toHexString(number).toUpperCase());\r\n"
+                           + "    }\r\n"
+                           + "}"
             },
             new Exercise
             {
                 Id = 22,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 23,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 24,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 25,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 26,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 27,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 28,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 29,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 30,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 31,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 32,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 33,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 34,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 35,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 36,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 37,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 38,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 39,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 40,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 41,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 42,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 43,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 44,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 45,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 46,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 47,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 48,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 49,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 50,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 51,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 52,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 53,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 54,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 55,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 56,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 57,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 58,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 59,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 60,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 61,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 62,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 63,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 64,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 65,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 66,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 67,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 68,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 69,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 70,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 71,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 72,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 73,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 74,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 75,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 76,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 77,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 78,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 79,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 80,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 81,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 82,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 83,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 84,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 85,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 86,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 87,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 88,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 89,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 90,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 91,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 92,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 93,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 94,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 95,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 96,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 97,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 98,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 99,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 100,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 101,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 102,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 103,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 104,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 105,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 106,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 107,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 108,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 109,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 110,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 111,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 112,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 113,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 114,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 115,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 116,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 117,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 118,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 119,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 120,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 121,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 122,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 123,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 124,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 125,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 126,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 127,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 128,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 129,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 130,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 131,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 132,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 133,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 134,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 135,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 136,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 137,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 138,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 139,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 140,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 141,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 142,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 143,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 144,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 145,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 146,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 147,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 148,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 149,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 150,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 151,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 152,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
-            },
-            new Exercise
-            {
-                Id = 153,
-                Name = "Test",
-                Size = 100,
-                Techniques = new() { "wow" },
-                Instructions = "",
-                Status = ExerciseStatus.Default,
-                Solution = ""
+                Name = "BinaryToOctal.java",
+                Size = 10,
+                Techniques = new() { "int", "Integer", "Integer.parseInt()", "Integer.toOctalString()", "Scanner", "Scanner.next()", "String" },
+                Instructions = "https://www.w3resource.com/java-exercises/basic/index.php\r\n"
+                               + "Write a Java program to convert a binary number to a Octal number.\r\n"
+                               + "Input Data:\r\n"
+                               + "Input a Binary Number: 111\r\n"
+                               + "Expected Output\r\n"
+                               + "\r\n"
+                               + "Octal number: 7\r\n"
+                               + "** HINT: Check the Java standard library. You're working with whole numbers here, so Integer (the wrapper class of int,\r\n"
+                               + "   as int is a primitive and therefore cannot have any methods) may be of use :)",
+                Status = ExerciseStatus.Default,
+                Solution = "import java.util.Scanner;\r\n"
+                           + "\r\n"
+                           + "public class BinaryToOctal {\r\n"
+                           + "    public static void main(String[] args) {\r\n"
+                           + "        Scanner in = new Scanner(System.in);\r\n"
+                           + "\r\n"
+                           + "        System.out.print(\"Input a Binary Number: \");\r\n"
+                           + "        String binaryNumberAsString = in.next();\r\n"
+                           + "\r\n"
+                           + "        int number = Integer.parseInt(binaryNumberAsString, 2);\r\n"
+                           + "\r\n"
+                           + "        System.out.println(\"Octal number: \" + Integer.toOctalString(number));\r\n"
+                           + "    }\r\n"
+                           + "}"
             });
     }
 }
