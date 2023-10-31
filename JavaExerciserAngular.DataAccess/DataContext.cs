@@ -30,7 +30,8 @@ public class DataContext : DbContext
                                + "** HINT: it can be fun to make your own method to convert a number or String to a binary number. But one thing to\r\n"
                                + "** learn on the road to becoming a professional is that Java has LOTS of useful methods already inbuilt. Check\r\n"
                                + "** the wrapper class of int, Integer! :)",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -45,7 +46,8 @@ public class DataContext : DbContext
                                + "Enter the first number: 3\r\n"
                                + "Enter the second number: 5\r\n"
                                + "The sum is: 8",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -72,7 +74,8 @@ public class DataContext : DbContext
                                + "I don't know any animal whose name starts with 'g'. You win!\r\n"
                                + "\r\n"
                                + "Hint: some sample animal names: cat, dog, turtle.",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -86,7 +89,8 @@ public class DataContext : DbContext
                                + "altPairs(\"kitten\") → \"kien\"\r\n"
                                + "altPairs(\"Chocolate\") → \"Chole\"\r\n"
                                + "altPairs(\"CodingHorror\") → \"Congrr\"",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -101,7 +105,8 @@ public class DataContext : DbContext
                                + "Expected Output\r\n"
                                + "Perimeter is = 47.12388980384689\r\n"
                                + "Area is = 176.71458676442586",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -117,7 +122,8 @@ public class DataContext : DbContext
                                + "Expected Output\r\n"
                                + "Area is 5.6 * 8.5 = 47.60\r\n"
                                + "Perimeter is 2 * (5.6 + 8.5) = 28.20",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -134,7 +140,8 @@ public class DataContext : DbContext
                                + "Expected Output\r\n"
                                + "\r\n"
                                + "The area of the hexagon is: 93.53074360871938",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -152,7 +159,8 @@ public class DataContext : DbContext
                                + "Expected Output\r\n"
                                + "\r\n"
                                + "The area is: 130.82084798405722",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -179,7 +187,8 @@ public class DataContext : DbContext
                                + "Such a triangle does not exist!\r\n"
                                + "\r\n"
                                + "HINT: if you can't easily find the formula, try https://www.cuemath.com/measurement/area-of-triangle-with-3-sides/",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -199,7 +208,8 @@ public class DataContext : DbContext
                                + "1\r\n"
                                + "19\r\n"
                                + "13",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -208,7 +218,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -217,7 +228,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -226,7 +238,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -235,7 +248,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -244,7 +258,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -253,7 +268,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -262,7 +278,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -271,7 +288,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -280,7 +298,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -289,7 +308,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -298,7 +318,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -307,7 +328,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -316,7 +338,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -325,7 +348,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -334,7 +358,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -343,7 +368,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -352,7 +378,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -361,7 +388,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -370,7 +398,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -379,7 +408,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -388,7 +418,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -397,7 +428,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -406,7 +438,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -415,7 +448,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -424,7 +458,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -433,7 +468,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -442,7 +478,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -451,7 +488,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -460,7 +498,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -469,7 +508,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -478,7 +518,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -487,7 +528,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -496,7 +538,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -505,7 +548,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -514,7 +558,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -523,7 +568,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -532,7 +578,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -541,7 +588,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -550,7 +598,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -559,7 +608,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -568,7 +618,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -577,7 +628,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -586,7 +638,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -595,7 +648,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -604,7 +658,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -613,7 +668,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -622,7 +678,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -631,7 +688,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -640,7 +698,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -649,7 +708,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -658,7 +718,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -667,7 +728,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -676,7 +738,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -685,7 +748,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -694,7 +758,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -703,7 +768,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -712,7 +778,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -721,7 +788,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -730,7 +798,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -739,7 +808,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -748,7 +818,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -757,7 +828,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -766,7 +838,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -775,7 +848,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -784,7 +858,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -793,7 +868,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -802,7 +878,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -811,7 +888,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -820,7 +898,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -829,7 +908,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -838,7 +918,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -847,7 +928,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -856,7 +938,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -865,7 +948,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -874,7 +958,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -883,7 +968,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -892,7 +978,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -901,7 +988,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -910,7 +998,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -919,7 +1008,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -928,7 +1018,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -937,7 +1028,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -946,7 +1038,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -955,7 +1048,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -964,7 +1058,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -973,7 +1068,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -982,7 +1078,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -991,7 +1088,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1000,7 +1098,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1009,7 +1108,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1018,7 +1118,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1027,7 +1128,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1036,7 +1138,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1045,7 +1148,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1054,7 +1158,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1063,7 +1168,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1072,7 +1178,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1081,7 +1188,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1090,7 +1198,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1099,7 +1208,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1108,7 +1218,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1117,7 +1228,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1126,7 +1238,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1135,7 +1248,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1144,7 +1258,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1153,7 +1268,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1162,7 +1278,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1171,7 +1288,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1180,7 +1298,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1189,7 +1308,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1198,7 +1318,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1207,7 +1328,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1216,7 +1338,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1225,7 +1348,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1234,7 +1358,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1243,7 +1368,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1252,7 +1378,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1261,7 +1388,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1270,7 +1398,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1279,7 +1408,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1288,7 +1418,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1297,7 +1428,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1306,7 +1438,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1315,7 +1448,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1324,7 +1458,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1333,7 +1468,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1342,7 +1478,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1351,7 +1488,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1360,7 +1498,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1369,7 +1508,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1378,7 +1518,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1387,7 +1528,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1396,7 +1538,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1405,7 +1548,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1414,7 +1558,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1423,7 +1568,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1432,7 +1578,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1441,7 +1588,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1450,7 +1598,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1459,7 +1608,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1468,7 +1618,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1477,7 +1628,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             },
             new Exercise
             {
@@ -1486,7 +1638,8 @@ public class DataContext : DbContext
                 Size = 100,
                 Techniques = new() { "wow" },
                 Instructions = "",
-                Status = Status.Default
+                Status = Status.Default,
+                Solution = ""
             });
     }
 }
