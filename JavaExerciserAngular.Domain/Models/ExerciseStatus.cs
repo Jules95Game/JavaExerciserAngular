@@ -2,6 +2,7 @@
 
 public enum ExerciseStatus
 {
+    Uninitialized,
     Default,
     Pending,
     Solved
