@@ -14,6 +14,7 @@ public class DataContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer("");
+        //Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=JavaExerciseDB;Integrated Security=True
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
